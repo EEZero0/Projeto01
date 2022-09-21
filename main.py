@@ -4,9 +4,6 @@ import json
 
 url = "https://weather.contrateumdev.com.br/api/weather/city/"
 
-#r = requests.get('https://weather.contrateumdev.com.br/api/weather/city/?city=Maceio,alagoas')
-#r = r.json()
-
 c = input('Qual a cidade? ')
 e = input('Qual o estado? ')
 
@@ -27,9 +24,3 @@ tem = a1['main']['temp']
 cli = a2['description']
 
 print('A cidade de {} esta com temperatura {} e clima {}'.format(c,tem,cli))
-
-#print('Temperatura max: {}',format(a11))
-#print('Temperatura min: {}',format(a1(['man']['temp_min'])))
-#print('Clima: {}',format(a2[6]))
-
-#print(r['coord']['lon'])
